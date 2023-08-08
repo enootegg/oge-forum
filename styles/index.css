@@ -651,10 +651,11 @@ body {
   .timeTextLower {
     font-size: 0.9em;
   }
+
   .scheduleBlockText {
     font-size: 0.9em;
   }
-  
+
   .scheduleBlockTime {
     font-size: 1em;
   }
@@ -662,19 +663,51 @@ body {
 
 /* SPEAKERS */
 
-#speakers {
-
-}
+#speakers {}
 
 .speakersContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  gap: 45px;
   max-width: 1260px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
-.speaker
+.speakerCard {
+  background: var(--dark-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 4px;
+
+}
+
+.speakerCard .speakerImage {
+  display: block;
+  padding: 0 20px;
+  max-height: 305px;
+  height: fit-content;
+  width: fit-content;
+  margin: 0 auto -5px;
+}
+
+.speakerCard .speakerInfo {
+  padding: 14px 12px;
+  background: var(--main-bg);
+  border-radius: 8px 8px 4px 4px;
+}
+
+.speakerCard .speakerInfo span {
+  display: block;
+  font-weight: 300;
+}
+
+.speakerCard .speakerInfo .speakerName {
+  font-weight: 500;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}
 
 /* PRICES */
 
@@ -767,6 +800,176 @@ body {
     grid-column-start: 1;
     grid-column-end: 4;
     justify-self: center;
+  }
+}
+
+/* PARTNERS */
+
+#partners {}
+
+.partnersWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  gap: 45px;
+  max-width: 1260px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.partnerCard {
+  background: #D9D9D9;
+  border-radius: 6px;
+  height: 140px;
+}
+
+/* MAP */
+
+#map {
+  display: block;
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto 64px;
+  border: none;
+}
+
+/* FOOTER */
+
+#footer {
+  display: flex;
+}
+
+.footerInfoContainer {
+  background-color: #1E1E1E;
+  display: flex;
+  width: calc(100% - 400px);
+}
+
+.socials {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socialLinks {
+  display: flex;
+  list-style: none;
+  margin: 30px 0 20px;
+}
+
+.socialLinks a {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background: #97f081;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 24px;
+  transition: background .3s ease;
+}
+
+.socialLinks a:last-child {
+  margin-right: 0;
+}
+
+.socialLinks a:hover {
+  background: #77cf61;
+  transition: background .3s ease;
+}
+
+.copyright {
+  color: var(--white-text);
+  font-weight: 200;
+  font-size: 1em;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  margin-left: 80px;
+}
+
+.contactsTitle {
+  color: var(--white-text);
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.contactsBlocks {
+  display: flex;
+}
+
+.contactsFirstBlock, .contactsSecondBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactsSecondBlock {
+  color: var(--white-text);
+  font-weight: 200;
+  font-size: 1.125em;
+  margin-left: 34px;
+  margin-top: -4px;
+}
+
+.contactsFirstElement {
+  margin-bottom: 14px;
+}
+
+.contactsFirstElement, .contactsSecondElement {
+  display: flex;
+  align-items: center;
+}
+
+.iconWrapper {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: #97f081;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactsLink {
+  color: var(--white-text);
+  font-weight: 200;
+  font-size: 1.125em;
+  text-decoration: none;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.partnersContainer {
+  background-color: var(--site-bg);
+  padding: 50px;
+  max-width: 400px;
+}
+
+.footerPartnersWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.nasuLogo {
+  width: 83px;
+  height: 100px;
+}
+
+.mesuLogo {
+  width: 308px;
+  height: 55px;
+}
+
+@media screen and (max-width: 992px) {
+  #footer, .footerInfoContainer {
+    flex-direction: column-reverse;
   }
 }
 

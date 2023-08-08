@@ -2,7 +2,7 @@
 
 let checkbox = document.querySelector('input[name="burger"]');
 
-checkbox.addEventListener("change", function () {
+checkbox.addEventListener("change", () => {
   document.querySelector("body").style.overflow = this.checked
     ? "hidden"
     : "inherit";
