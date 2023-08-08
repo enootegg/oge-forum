@@ -841,7 +841,8 @@ body {
 .footerInfoContainer {
   background-color: #1E1E1E;
   display: flex;
-  width: calc(100% - 400px);
+  justify-content: space-around;
+  width: calc(100% - 360px);
 }
 
 .socials {
@@ -887,8 +888,7 @@ body {
 .contacts {
   display: flex;
   flex-direction: column;
-  margin-top: 48px;
-  margin-left: 80px;
+  margin-top: 60px;
 }
 
 .contactsTitle {
@@ -947,8 +947,8 @@ body {
 
 .partnersContainer {
   background-color: var(--site-bg);
-  padding: 50px;
-  max-width: 400px;
+  padding: 50px 30px;
+  max-width: 360px;
 }
 
 .footerPartnersWrapper {
@@ -967,11 +967,64 @@ body {
   height: 55px;
 }
 
+@media screen and (max-width: 1200px) {
+  #footer{
+    flex-direction: column-reverse;
+  }
+  .partnersContainer{
+    max-width: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 20px;
+  }
+  .partnersContainer img{
+    margin-right: 30px;
+  }
+  .mesuLogo{
+    margin-right: 0 !important;
+  }
+  .footerInfoContainer{
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 992px) {
+  .footerInfoContainer{
+    flex-direction: column-reverse;
+  }
+  .contacts{
+    align-items: center;
+    margin-top: 30px;
+  }
+  .contactsTitle{
+    font-size: 1.5em;
+  }
+  .contactsLink, .contactsSecondBlock{
+    font-size: 1.125em;
+  }
+}
+
+@media screen and (max-width: 752px) {
+  .partnersContainer{
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+  .contactsBlocks{
+    flex-direction: column;
+  }
+  .contactsSecondBlock{
+    margin-left: 0;
+    margin-top: 34px;
+    text-align: center;
+  }
+}
+
+/* @media screen and (max-width: 992px) {
   #footer, .footerInfoContainer {
     flex-direction: column-reverse;
   }
-}
+} */
 
 
 
