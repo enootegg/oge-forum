@@ -22,6 +22,7 @@ body {
 /* HEADER */
 
 .mainHeader {
+  background: rgba(30, 30, 30, 0.1);
   height: 110px;
   width: 100%;
   position: fixed;
@@ -39,6 +40,7 @@ body {
 
 .logoLink {
   height: 70px;
+  z-index: 10;
 }
 
 #burgerMenu {
@@ -203,13 +205,13 @@ body {
 }
 
 .navbar .menu-items {
-  padding-top: 120px;
   background: linear-gradient(90deg, #0ba387 0%, #6baa70 100%);
   height: 100vh;
   width: 100%;
   transform: translate(-150%);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   transition: transform 0.5s ease-in-out;
   text-align: center;
 }
@@ -480,6 +482,7 @@ body {
 /* SCHEDULE */
 
 #schedule {
+  scroll-margin-top: 140px;
   display: flex;
   justify-content: center;
 }
@@ -501,8 +504,11 @@ body {
 
 .daysBlock {
   width: 100%;
+  /* min-width: 992px; */
   display: flex;
   justify-content: space-between;
+  overflow-x: auto;
+  padding-bottom: 16px;
 }
 
 .day {
@@ -624,9 +630,40 @@ body {
   text-align: end;
 }
 
+@media screen and (max-width: 992px) {
+  .mainScheduleBlock {
+    width: 300px;
+    height: 138px;
+  }
+
+  .mainScheduleBlockText .upperText {
+    font-size: 1.125em;
+  }
+
+  .mainScheduleBlockText .lowerText {
+    font-size: 1.0625em;
+  }
+
+  .timeText {
+    font-size: 1.125em;
+  }
+
+  .timeTextLower {
+    font-size: 0.9em;
+  }
+  .scheduleBlockText {
+    font-size: 0.9em;
+  }
+  
+  .scheduleBlockTime {
+    font-size: 1em;
+  }
+}
+
 /* PRICES */
 
 #prices {
+  scroll-margin-top: 140px;
   max-width: 1260px;
   width: 100%;
   margin: 0 auto;
