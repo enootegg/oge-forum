@@ -4,7 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OGE</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      href="./images/favicon.svg"
+      type="image/x-icon"
+    />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="headerContainer">
+        <a href="/" class="logoLink">
+          <img class="logo" src="./images/logo.svg" alt="logo" />
+        </a>
+        <nav id="menu">
+          <ul class="menuList">
+            <li><a href="#">Наукові напрямки</a></li>
+            <li><a href="#">Розклад</a></li>
+            <li><a href="#">Спікери</a></li>
+            <li><a href="#">Вартість</a></li>
+            <li><a href="#">Партнери</a></li>
+          </ul>
+        </nav>
+        <nav id="burgerMenu">
+          <div class="navbar">
+            <div class="container nav-container">
+              <input class="checkbox" type="checkbox" name="burger" />
+              <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </div>
+              <div class="menu-items">
+                <ul class="menu-ul">
+                  <li><a href="#">Наукові напрямки</a></li>
+                  <li><a href="#">Розклад</a></li>
+                  <li><a href="#">Спікери</a></li>
+                  <li><a href="#">Вартість</a></li>
+                  <li><a href="#">Партнери</a></li>
+                </ul>
+                <button class="signupBtn">Реєстрація</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <button class="signupBtn">Реєстрація</button>
+      </div>
+    </header>
+    <section id="hero">
+      <div class="heroContainer">
+        <div class="mainTextBlock">
+          <h1>
+            Міжнародний науковий форум
+            <span class="blueText">Нафтогазова енергетика</span>
+            <span class="smallText">Енергетичний перехід</span>
+          </h1>
+        </div>
+        <div class="lowerTextBlock">
+          <span class="location">
+            c. Поляниця,<br />
+            F&B Spa Resort<br />
+            (Буковель, Fomich Hotel)
+          </span>
+          <span class="date">12-14 жовтня 2023</span>
+        </div>
+        <a href="#info">
+          <img
+            src="./images/scroll-down.svg"
+            alt="scroll down"
+            class="scrollDown"
+          />
+        </a>
+      </div>
+    </section>
+    <section id="info"></section>
+    <script src="./scripts/index.js"></script>
+  </body>
 </html>

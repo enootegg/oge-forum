@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url(./fonts/e-Ukraine-Thin.otf);
+  font-weight: 100;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url(./fonts/e-Ukraine-UltraLight.otf);
+  font-weight: 200;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url(./fonts/e-Ukraine-Light.otf);
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url(./fonts/e-Ukraine-Regular.otf);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url(./fonts/e-Ukraine-Medium.otf);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url(./fonts/e-Ukraine-Bold.otf);
+  font-weight: 700;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'e-Ukraine', sans-serif;
+}
