@@ -21,14 +21,19 @@ body {
 
 /* HEADER */
 
-.mainHeader {
-  background: rgba(30, 30, 30, 0.1);
+#mainHeader {
   height: 110px;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
+  transition: all 1.2s ease-in-out;
+}
+
+#mainHeader.dark{
+  background: rgba(30, 30, 30, 0.6);
+  transition: all 1.2s ease-in-out;
 }
 
 .headerContainer {
@@ -93,6 +98,19 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+  #mainHeader{
+    height: 90px;
+  }
+  .headerContainer{
+    padding: 10px 40px;
+  }
+  .headerContainer .logo{
+    height: 60px;
+    width: auto;
+  }
+  .logoLink{
+    height: 60px;
+  }
   #menu {
     display: none;
   }
@@ -162,7 +180,8 @@ body {
   display: block;
   height: 32px;
   width: 32px;
-  top: 48px;
+  /* top: 48px; */
+  top: 31px;
   right: 50px;
   z-index: 5;
   opacity: 0;
@@ -174,7 +193,8 @@ body {
   height: 26px;
   width: 32px;
   position: absolute;
-  top: 50px;
+  /* top: 50px; */
+  top: 34px;
   right: 50px;
   z-index: 2;
   display: flex;
@@ -241,6 +261,15 @@ body {
 .nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
   transform: rotate(-45deg);
 }
+
+/* @media screen and (max-width: 992px) {
+  .nav-container .hamburger-lines{
+    top: 34px;
+  }
+  .nav-container .checkbox{
+    top: 31px;
+  }
+} */
 
 /* HERO */
 
@@ -531,7 +560,6 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 24px;
-  /* box-shadow: 2px 2px 14px -1px rgba(30,30,30,0.7); */
   box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -592,7 +620,6 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  /* box-shadow: 2px 2px 14px -1px rgba(30,30,30,0.7); */
   box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -679,8 +706,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  border-radius: 4px;
-
+  border-radius: 5px;
+  box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.25);
 }
 
 .speakerCard .speakerImage {
@@ -694,7 +721,8 @@ body {
 
 .speakerCard .speakerInfo {
   padding: 14px 12px;
-  background: var(--main-bg);
+  /* background: var(--main-bg); */
+  background: linear-gradient(135deg, rgba(104, 192, 119, 0.95) 0%, rgba(107, 170, 117, 0.95) 100%);
   border-radius: 8px 8px 4px 4px;
 }
 
@@ -730,7 +758,8 @@ body {
 }
 
 #prices .pricesHeader {
-  background: rgba(var(--main-bg-rgb), 0.95);
+  /* background: rgba(var(--main-bg-rgb), 0.95); */
+  background: linear-gradient(135deg, rgba(104, 192, 119, 0.95) 0%, rgba(107, 170, 117, 0.95) 100%);
   padding: 2.69rem 4rem;
   border-radius: 12px 12px 0 0;
 }
@@ -763,7 +792,8 @@ body {
   all: unset;
   cursor: pointer;
   border-radius: 0.125rem;
-  background: var(--main-bg);
+  /* background: var(--main-bg); */
+  background: linear-gradient(135deg, rgba(104, 192, 119, 0.95) 0%, rgba(107, 170, 117, 0.95) 100%);
   text-align: center;
   padding: 0.875rem 1.375rem;
   color: var(--white-text);
@@ -1020,13 +1050,8 @@ body {
   }
 }
 
-/* @media screen and (max-width: 992px) {
-  #footer, .footerInfoContainer {
-    flex-direction: column-reverse;
-  }
-} */
 
-
+/* CONTAINER */
 
 .container {
   box-sizing: border-box;
