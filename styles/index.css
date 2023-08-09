@@ -1125,6 +1125,7 @@ body {
   /* height: 500px; */
   min-height: 500px;
   width: 800px;
+  max-height: calc(100vh - 140px);
 }
 
 .modalHeader{
@@ -1213,7 +1214,7 @@ body {
   padding: 30px;
   display: flex;
   flex-direction: column;
-  max-height: calc(90vh - 200px);
+  max-height: calc(100vh - 140px - 104px);
   overflow-y: auto;
 }
 
