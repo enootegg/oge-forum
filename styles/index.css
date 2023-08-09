@@ -1213,7 +1213,7 @@ body {
   padding: 30px;
   display: flex;
   flex-direction: column;
-  max-height: calc(95vh - 200px);
+  max-height: calc(90vh - 200px);
   overflow-y: auto;
 }
 
