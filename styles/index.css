@@ -195,6 +195,10 @@ body {
 	transition: all 0.3s ease;
 }
 
+.navbar .nav-container .signupBtn {
+  font-size: 1em;
+}
+
 .nav-container {
 	display: block;
 	position: relative;
