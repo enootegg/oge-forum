@@ -1172,7 +1172,7 @@ body {
 	/* height: 500px; */
 	min-height: 500px;
 	width: 800px;
-	max-height: calc(100% - 140px);
+	max-height: calc(100% - 110px);
 }
 
 .modalHeader {
@@ -1262,7 +1262,12 @@ body {
 	padding: 30px;
 	display: flex;
 	flex-direction: column;
-	max-height: calc(100vh - 140px - 104px);
+	max-height: calc(100vh - 140px - 94px);
+	overflow-y: auto;
+}
+
+#modalHryvnia .modalBody{
+  max-height: calc(100vh - 140px - 94px);
 	overflow-y: auto;
 }
 
@@ -1291,9 +1296,11 @@ body {
 		grid-template-columns: 1fr;
 	}
 	.euroContainer {
-		/* padding-bottom: 0; */
 		margin-bottom: 30px;
 	}
+  #modalHryvnia .modalBody{
+    margin-bottom: 30px;
+  }
 	.modalBody {
 		grid-template-columns: 1fr;
 	}
