@@ -379,25 +379,33 @@ body {
 
 @media screen and (max-width: 748px) {
   .mainTextBlock {
-    max-width: 436px;
+    /* max-width: 436px; */
+    width: 95%;
     margin-top: 260px;
   }
 
   .mainTextBlock h1 {
-    font-size: 1.2em;
+    font-size: 1.4em;
     padding: 20px 18px;
   }
 
   .mainTextBlock h1 .smallText {
-    font-size: 0.9em;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 554px) {
+  .mainTextBlock {
+    width: 99%;
   }
 
-  .lowerTextBlock {
-    margin-bottom: 160px;
+  .mainTextBlock h1 {
+    font-size: 1.2em;
+    padding: 20px 6px;
   }
 
   .lowerTextBlock span {
-    font-size: 1.25em;
+    font-size: 1.2em;
   }
 }
 
