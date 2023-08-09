@@ -236,8 +236,8 @@ body {
   text-align: center;
 }
 
-.navbar .menu-items li {
-  margin-bottom: 1.2rem;
+.navbar .menu-items a {
+  /* margin-bottom: 1.2rem; */
   font-size: 1.5rem;
   font-weight: 500;
 }
