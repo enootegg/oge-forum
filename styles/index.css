@@ -715,7 +715,8 @@ body {
   padding: 0 20px;
   max-height: 305px;
   height: fit-content;
-  width: fit-content;
+  /* width: fit-content; */
+  object-fit: contain;
   margin: 0 auto -5px;
 }
 
