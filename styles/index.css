@@ -1125,7 +1125,7 @@ body {
   /* height: 500px; */
   min-height: 500px;
   width: 800px;
-  max-height: calc(100vh - 140px);
+  max-height: calc(100% - 140px);
 }
 
 .modalHeader{
@@ -1243,7 +1243,7 @@ body {
     grid-template-columns: 1fr;
   }
   .euroContainer{
-    padding-bottom: 0;
+    /* padding-bottom: 0; */
     margin-bottom: 30px;
   }
   .modalBody{
