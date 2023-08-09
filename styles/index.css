@@ -430,7 +430,9 @@ body {
 
 /* INFO */
 
-#info {}
+#info {
+  scroll-margin-top: 140px;
+}
 
 .infoContainer {
   display: flex;
@@ -698,7 +700,9 @@ body {
 
 /* SPEAKERS */
 
-#speakers {}
+#speakers {
+  scroll-margin-top: 140px;
+}
 
 .speakersContainer {
   display: grid;
@@ -844,7 +848,9 @@ body {
 
 /* PARTNERS */
 
-#partners {}
+#partners {
+  scroll-margin-top: 140px;
+}
 
 .partnersWrapper {
   display: grid;
@@ -1094,5 +1100,150 @@ body {
 @media screen and (max-width: 992px) {
   .container {
     padding: 0 10px;
+  }
+}
+
+/* MODALS  */
+
+#modalHryvnia, #modalEuro{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #575757a4;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modalContainer{
+  background-color: var(--site-bg);
+  border-radius: 20px;
+  /* height: 500px; */
+  min-height: 500px;
+  width: 800px;
+}
+
+.modalHeader{
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(141, 141, 141, 0.39);
+}
+
+.modalHeaderText{
+  display: flex;
+  align-items: center;
+}
+
+.modalHeaderText span {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.modalHeaderIcon{
+  height: 42px;
+  width: 42px;
+}
+
+.modalClose{
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: solid 1px rgba(141, 141, 141, 0.39);
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.modalBody{
+  padding: 30px;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+  grid-gap: 18px 24px;
+}
+
+.euroContainer .modalBody {
+  padding: 0;
+}
+
+.infoItem{
+  display: flex;
+  flex-direction: column;
+  max-width: 328px;
+}
+
+.infoItemName{
+  font-size: 0.9em;
+  font-weight: 300;
+  margin-bottom: 10px;
+  color: rgba(141, 141, 141, 0.9);;
+}
+
+.infoItemContent{
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.banks{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 18px 24px;
+}
+
+.banksOr{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-self: center;
+  font-size: 1em;
+}
+
+.firstBank, .secondBank{
+  display: grid;
+  row-gap: 18px;
+}
+
+.euroContainer{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
+}
+
+.correspondents{
+  text-align: center;
+  margin: 26px 0 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .modalContainer{
+    width: 90%;
+  }
+  .modalHeaderText span {
+    font-size: 1.25em;
+  }
+}
+
+@media screen and (max-width: 822px) {
+  .firstBank{
+    grid-row-start: 1;
+  }
+  .secondBank{
+    grid-row-start: 3;
+  }
+  .banks{
+    grid-template-columns: 1fr;
+  }
+  .euroContainer{
+    padding-bottom: 0;
+    margin-bottom: 30px;
   }
 }

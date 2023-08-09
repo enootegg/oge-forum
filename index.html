@@ -618,8 +618,8 @@
             <span>350€ / особа</span>
 
             <span></span>
-            <button class="order">Реквізити</button>
-            <button class="order">Реквізити</button>
+            <button class="order" id="orderHryvnia">Реквізити</button>
+            <button class="order" id="orderEuro">Реквізити</button>
           </main>
         </section>
       </div>
@@ -755,7 +755,169 @@
         />
       </div>
     </footer>
-
+    <article id="modalHryvnia" class="modal">
+      <div class="modalContainer">
+        <div class="modalHeader">
+          <div class="modalHeaderText">
+            <img
+              src="./images/documentIcon.svg"
+              alt="Document icon"
+              class="modalHeaderIcon"
+            />
+            <span>Реквізити</span>
+          </div>
+          <button class="modalClose">
+            <img src="./images/close.svg" alt="Close button" />
+          </button>
+        </div>
+        <div class="modalBody">
+          <div class="infoItem">
+            <span class="infoItemName">Одержувач</span>
+            <span class="infoItemContent">
+              Благодійна організація “Благодійний фонд “МІЙ УНІВЕРСИТЕТ”
+            </span>
+          </div>
+          <div class="infoItem">
+            <span class="infoItemName">Банк одержувача</span>
+            <span class="infoItemContent"> АТ КБ Приватбанк </span>
+          </div>
+          <div class="infoItem">
+            <span class="infoItemName">ЄДРПОУ</span>
+            <span class="infoItemContent"> 38713155 </span>
+          </div>
+          <div class="infoItem">
+            <span class="infoItemName">МФО</span>
+            <span class="infoItemContent"> 305299 </span>
+          </div>
+          <div class="infoItem">
+            <span class="infoItemName">IBAN</span>
+            <span class="infoItemContent"> UA243052990000026007015504887 </span>
+          </div>
+          <div class="infoItem">
+            <span class="infoItemName">Директор фонду</span>
+            <span class="infoItemContent"> Дзьоба Олег Григорович </span>
+          </div>
+          <div class="infoItem">
+            <span class="infoItemName">Контактний телефон </span>
+            <span class="infoItemContent"> Марія Савчук - +380503736087 </span>
+          </div>
+          <div class="infoItem">
+            <span class="infoItemName">Діє на підставі статуту</span>
+            <span class="infoItemName">Неприбуткова організація 0036</span>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article id="modalEuro" class="modal">
+      <div class="modalContainer">
+        <div class="modalHeader">
+          <div class="modalHeaderText">
+            <img
+              src="./images/documentIcon.svg"
+              alt="Document icon"
+              class="modalHeaderIcon"
+            />
+            <span>Реквізити</span>
+          </div>
+          <button class="modalClose">
+            <img src="./images/close.svg" alt="Close button" />
+          </button>
+        </div>
+        <div class="euroContainer">
+          <div class="modalBody">
+            <div class="infoItem">
+              <span class="infoItemName"
+                >Найменування компанії / Company Name</span
+              >
+              <span class="infoItemContent"> БФ МIЙ УНIВЕРСИТЕТ БО </span>
+            </div>
+            <div class="infoItem">
+              <span class="infoItemName">IBAN</span>
+              <span class="infoItemContent">UA213052990000026001015500683</span>
+            </div>
+            <div class="infoItem">
+              <span class="infoItemName"
+                >Найменування банку / Name of the bank</span
+              >
+              <span class="infoItemContent"
+                >JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE
+              </span>
+            </div>
+            <div class="infoItem">
+              <span class="infoItemName"
+                >Адреса компанії / Company address</span
+              >
+              <span class="infoItemContent"
+                >UA 76019 Iвано-Франкiвська м. Iвано-Франкiв ськ вул. Карпатська
+                б.15
+              </span>
+            </div>
+            <div class="infoItem">
+              <span class="infoItemName"
+                >SWIFT Code банку / Bank SWIFT Code</span
+              >
+              <span class="infoItemContent">PBANUA2X</span>
+            </div>
+          </div>
+          <span class="correspondents"
+            >Банки-кореспонденти / Correspondent banks</span
+          >
+          <div class="banks">
+            <span class="banksOr">або / or</span>
+            <div class="firstBank">
+              <div class="infoItem">
+                <span class="infoItemName"
+                  >Рахунок у банку-корреспондента / <br />
+                  Account in the correspondent bank</span
+                >
+                <span class="infoItemContent">400886700401</span>
+              </div>
+              <div class="infoItem">
+                <span class="infoItemName"
+                  >SWIFT Code банку-кореспондента / <br />
+                  SWIFT code of the correspondent bank</span
+                >
+                <span class="infoItemContent">COBADEFF</span>
+              </div>
+              <div class="infoItem">
+                <span class="infoItemName"
+                  >Банк-кореспондент / <br />
+                  Correspondent bank</span
+                >
+                <span class="infoItemContent"
+                  >Commerzbank AG ,Frankfurt am Main, Germany</span
+                >
+              </div>
+            </div>
+            <div class="secondBank">
+              <div class="infoItem">
+                <span class="infoItemName"
+                  >Рахунок у банку-кореспондента / <br />
+                  Account in the correspondent bank</span
+                >
+                <span class="infoItemContent">6231605145</span>
+              </div>
+              <div class="infoItem">
+                <span class="infoItemName"
+                  >SWIFT Code банку-кореспондента / <br />
+                  SWIFT code of the correspondent bank</span
+                >
+                <span class="infoItemContent">CHASDEFX</span>
+              </div>
+              <div class="infoItem">
+                <span class="infoItemName"
+                  >Банк-кореспондент / <br />
+                  Correspondent bank</span
+                >
+                <span class="infoItemContent"
+                  >J.P. Morgan AG, Frankfurt am Main, Germany</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
     <script src="./scripts/index.js"></script>
   </body>
 </html>

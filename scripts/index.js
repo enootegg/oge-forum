@@ -31,3 +31,43 @@ document.querySelectorAll(".menu-ul a").forEach((el) => {
     document.querySelector("body").style.overflow = "inherit";
   });
 });
+
+//Open order popup
+
+document.getElementById("orderHryvnia").addEventListener("click", () => {
+  document.getElementById("modalHryvnia").style.display = "flex";
+  document.querySelector("body").style.overflow = "hidden";
+});
+
+document.getElementById("orderEuro").addEventListener("click", () => {
+  document.getElementById("modalEuro").style.display = "flex";
+  document.querySelector("body").style.overflow = "hidden";
+});
+
+//Close order popup
+
+document.querySelectorAll(".modalClose").forEach((e) => {
+  e.addEventListener("click", () => closeModal());
+});
+
+document.querySelectorAll(".modal").forEach((el) => {
+  el.addEventListener("click", () => closeModal());
+});
+
+// when we click on .modalContainer, popup doesn`t close
+document
+  .querySelector(".modalContainer")
+  .addEventListener("click", (e) => e.stopPropagation());
+
+document
+  .querySelector(".euroContainer")
+  .addEventListener("click", (e) => e.stopPropagation());
+
+// Close modal function
+
+const closeModal = () => {
+  document.querySelectorAll(".modal").forEach((el) => {
+    el.style.display = "none";
+    document.querySelector("body").style.overflow = "inherit";
+  });
+};
