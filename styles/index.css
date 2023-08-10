@@ -112,10 +112,9 @@ body {
 	.headerContainer {
 		padding: 20px 40px;
 	}
-
-																																																																																																																																																																																																																																																																.signupBtn.smallText {
-																																																																																																																																																																																																																																																																	margin-left: 0;
-																																																																																																																																																																																																																																																																}
+	.signupBtn.smallText {
+		margin-left: 0;
+	}
 	.menuList li {
 		margin-right: 18px;
 	}
@@ -155,14 +154,14 @@ body {
 		display: none;
 	}
 
-																																																																																																																																																																																																																																																																.menu-items>.signupBtn {
+	.menu-items > .signupBtn {
 		display: block;
 		width: 150px;
 		margin: 0 auto;
 		margin-top: 10px;
 	}
 
-																																																																																																																																																																																																																																																																.lowerTextBlock>.signupBtn {
+	.lowerTextBlock > .signupBtn {
 		display: block;
 		width: 150px;
 		margin: 0 auto 30px;
@@ -232,7 +231,6 @@ body {
 	height: 26px;
 	width: 32px;
 	position: absolute;
-	/* top: 50px; */
 	top: 34px;
 	right: 50px;
 	z-index: 2;
@@ -310,10 +308,16 @@ body {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
 	align-items: center;
 	position: relative;
 	padding-top: 130px;
+}
+
+.mainTextBlockWrapper{
+	flex: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .mainTextBlock {
@@ -321,6 +325,7 @@ body {
 	background: rgba(30, 30, 30, 0.3);
 	max-width: 1044px;
 	color: var(--white-text);
+	text-wrap: nowrap;
 }
 
 .mainTextBlock h1 {
@@ -332,6 +337,7 @@ body {
 	align-items: center;
 	text-transform: uppercase;
 	color: inherit;
+	text-wrap: nowrap;
 }
 
 .mainTextBlock h1 .blueText {
@@ -349,6 +355,11 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 180px;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	margin-top: 60px;
+	margin-bottom: 40px;
 }
 
 .lowerTextBlock span {
@@ -363,10 +374,7 @@ body {
 }
 
 .scrollDownLink {
-	position: absolute;
-	bottom: 50px;
-	left: 50%;
-	transform: translateX(-50%);
+	margin-top: 30px;
 }
 
 .scrollDown {
@@ -390,10 +398,6 @@ body {
 
 	.mainTextBlock h1 .smallText {
 		font-size: 0.9em;
-	}
-
-	.lowerTextBlock {
-		margin-bottom: 160px;
 	}
 
 	.lowerTextBlock span {
@@ -529,9 +533,6 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-	.heroContainer {
-			justify-content: space-between;
-		}
 	.paragraph {
 		flex-direction: column-reverse;
 		align-items: center;
@@ -551,13 +552,13 @@ body {
 
 #areas {
 	scroll-margin-top: 140px;
-		max-width: 1260px;
-		margin: 0 auto 64px;
-		display: grid;
+	max-width: 1260px;
+	margin: 0 auto 64px;
+	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-		grid-template-rows: auto;
-		gap: 32px;
-		justify-content: space-between;
+	grid-template-rows: auto;
+	gap: 32px;
+	justify-content: space-between;
 }
 
 .area {
@@ -617,38 +618,30 @@ body {
 		grid-column: 1 / 3;
 		background: linear-gradient(136deg, #209CFF 0%, #68E0CF 100%);
 	}
-.area:nth-child(4) {
-	grid-column: 3 / 5;
-	background: linear-gradient(136deg, #F83600 0%, #F9D423 100%);
+	.area:nth-child(4) {
+		grid-column: 3 / 5;
+		background: linear-gradient(136deg, #F83600 0%, #F9D423 100%);
+	}
+
+	.area:nth-child(5) {
+		grid-column: 1 / 5;
+		background: linear-gradient(90deg, #A1C4FD 0%, #A1E2F8 100%);
+	}
 }
 
-																																																																																																																																																																																																																																																																.area:nth-child(5) {
-																																																																																																																																																																																																																																																																	grid-column: 1 / 5;
-																																																																																																																																																																																																																																																																	background: linear-gradient(90deg, #A1C4FD 0%, #A1E2F8 100%);
-																																																																																																																																																																																																																																																																}
-																																																																																																																																																																																																																																																																}
-																																																																																																																																
-																																																																																																																																																																																																																																																																@media screen and (max-width: 992px) {
-																																																																																																																																																																																																																																																																	.areaText {
-																																																																																																																																																																																																																																																																		font-size: 1.1em;
-																																																																																																																																																																																																																																																																	}
-																																																																																																																																
-																																																																																																																																																																																																																																																																	.area:nth-child(1) {
-																																																																																																																																																																																																																																																																		grid-column: 1 / 5;
-																																																																																																																																																																																																																																																																	}
-																																																																																																																																
-																																																																																																																																																																																																																																																																	.area:nth-child(2) {
-																																																																																																																																																																																																																																																																		grid-column: 1 / 5;
-																																																																																																																																																																																																																																																																	}
-																																																																																																																																
-																																																																																																																																																																																																																																																																	.area:nth-child(3) {
-																																																																																																																																																																																																																																																																		grid-column: 1 / 5;
-																																																																																																																																																																																																																																																																	}
-																																																																																																																																
-																																																																																																																																																																																																																																																																	.area:nth-child(4) {
-																																																																																																																																																																																																																																																																		grid-column: 1 / 5;
-																																																																																																																																																																																																																																																																	}
-																																																																																																																																																																																																																																																																}
+@media screen and (max-width: 992px) {
+	.areaText {
+		font-size: 1.1em;
+	}
+	#areas{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.area{
+		max-width: 600px;
+	}
+}
 /* SCHEDULE */
 
 #schedule {
@@ -674,7 +667,6 @@ body {
 
 .daysBlock {
 	width: 100%;
-	/* min-width: 992px; */
 	display: flex;
 	justify-content: space-between;
 	overflow-x: auto;
@@ -691,12 +683,10 @@ body {
 
 .mainScheduleBlock {
 	padding: 28px 35px;
-	/* width: 374px; */
 	width: 100%;
 	max-width: 374px;
 	height: 170px;
 	border-radius: 6px;
-	/* background-color: rgba(107, 170, 117, 0.95); */
 	background: linear-gradient(135deg,
 				rgba(104, 192, 119, 0.95) 0%,
 			rgba(107, 170, 117, 0.95) 100%);
@@ -759,7 +749,6 @@ body {
 	height: auto;
 	border-radius: 8px;
 	padding: 15px 30px 15px 15px;
-	/* background-color: #9AC5A1; */
 	background: linear-gradient(135deg, #8fcf9a 0%, #9ac5a1 100%);
 	display: flex;
 	flex-direction: column;
@@ -862,14 +851,12 @@ body {
 	padding: 0 20px;
 	max-height: 305px;
 	height: fit-content;
-	/* width: fit-content; */
 	object-fit: contain;
 	margin: 0 auto -5px;
 }
 
 .speakerCard .speakerInfo {
 	padding: 14px 12px;
-	/* background: var(--main-bg); */
 	background: linear-gradient(135deg,
 				rgba(104, 192, 119, 0.95) 0%,
 			rgba(107, 170, 117, 0.95) 100%);
@@ -885,6 +872,12 @@ body {
 	font-weight: 500;
 	font-size: 1.25em;
 	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 992px) {
+	.speakerCard .speakerImage {
+		padding: 0 10px;
+	}
 }
 
 /* PRICES */
@@ -911,7 +904,6 @@ body {
 }
 
 #prices .pricesHeader {
-	/* background: rgba(var(--main-bg-rgb), 0.95); */
 	background: linear-gradient(135deg,
 				rgba(104, 192, 119, 0.95) 0%,
 			rgba(107, 170, 117, 0.95) 100%);
@@ -946,7 +938,6 @@ body {
 	all: unset;
 	cursor: pointer;
 	border-radius: 0.125rem;
-	/* background: var(--main-bg); */
 	background: linear-gradient(135deg,
 				rgba(104, 192, 119, 0.95) 0%,
 			rgba(107, 170, 117, 0.95) 100%);
@@ -1278,7 +1269,6 @@ body {
 .modalContainer {
 	background-color: var(--site-bg);
 	border-radius: 20px;
-	/* height: 500px; */
 	min-height: 500px;
 	width: 800px;
 	max-height: calc(100% - 110px);
@@ -1322,7 +1312,6 @@ body {
 .modalBody {
 	padding: 30px;
 	display: grid;
-	/* grid-template-columns: 1fr 1fr; */
 	grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
 	grid-gap: 18px 24px;
 }
