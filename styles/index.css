@@ -7,12 +7,10 @@
 	--white-bg: #ecf3f1;
 	--dark-text: #1e1e1e;
 	--blue-text: #a1e2f8;
-	--hero-bg-gradient: linear-gradient(
-		134deg,
-		rgba(26, 77, 143, 0.5) 0%,
-		rgba(36, 77, 11, 0.5) 53.53%,
-		rgba(231, 126, 1, 0.5) 100%
-	);
+	--hero-bg-gradient: linear-gradient(134deg,
+				rgba(26, 77, 143, 0.5) 0%,
+				rgba(36, 77, 11, 0.5) 53.53%,
+			rgba(231, 126, 1, 0.5) 100%);
 }
 
 * {
@@ -80,8 +78,7 @@ body {
 	border: none;
 	border-radius: 2px;
 	background-image: linear-gradient(90deg, #0ba360 0%, #6baa75 100%);
-  background-size: 200% 100%;
-
+	background-size: 200% 100%;
 	display: inline-flex;
 	padding: 18px 22px;
 	justify-content: center;
@@ -91,19 +88,24 @@ body {
 	font-weight: 400;
 	font-size: 1.125em;
 	cursor: pointer;
-  text-decoration: none;
-  transition: all 0.3s ease-out;
+	text-decoration: none;
+		transition: all 0.3s ease-out;
 
 }
 
+.signupBtn.smallText {
+	margin-left: 14px;
+	font-size: 1em;
+	font-weight: 300;
+}
 .signupBtn:hover {
 	background-position: 60% 40%;
-  transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
 }
 
-.lowerTextBlock > .signupBtn {
-  width: 225px;
-  margin: 0 auto 30px;
+.lowerTextBlock>.signupBtn {
+	width: 225px;
+	margin: 0 auto 30px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -111,6 +113,9 @@ body {
 		padding: 20px 40px;
 	}
 
+																																																																																																																																																																																																																																																																.signupBtn.smallText {
+																																																																																																																																																																																																																																																																	margin-left: 0;
+																																																																																																																																																																																																																																																																}
 	.menuList li {
 		margin-right: 18px;
 	}
@@ -120,16 +125,20 @@ body {
 	#mainHeader {
 		height: 90px;
 	}
+
 	.headerContainer {
 		padding: 10px 40px;
 	}
+
 	.headerContainer .logo {
 		height: 60px;
 		width: auto;
 	}
+
 	.logoLink {
 		height: 60px;
 	}
+
 	#menu {
 		display: none;
 	}
@@ -146,18 +155,19 @@ body {
 		display: none;
 	}
 
-	.menu-items > .signupBtn {
+																																																																																																																																																																																																																																																																.menu-items>.signupBtn {
 		display: block;
 		width: 150px;
 		margin: 0 auto;
 		margin-top: 10px;
 	}
 
-	.lowerTextBlock > .signupBtn {
+																																																																																																																																																																																																																																																																.lowerTextBlock>.signupBtn {
 		display: block;
 		width: 150px;
 		margin: 0 auto 30px;
 	}
+
 }
 
 /* BURGER MENU */
@@ -181,7 +191,7 @@ body {
 }
 
 .navbar .nav-container a {
-  display: inherit;
+	display: inherit;
 	text-decoration: none;
 	color: var(--white-text);
 	font-weight: 500;
@@ -196,7 +206,7 @@ body {
 }
 
 .navbar .nav-container .signupBtn {
-  font-size: 1em;
+	font-size: 1em;
 }
 
 .nav-container {
@@ -210,7 +220,6 @@ body {
 	display: block;
 	height: 32px;
 	width: 32px;
-	/* top: 48px; */
 	top: 31px;
 	right: 50px;
 	z-index: 5;
@@ -267,39 +276,25 @@ body {
 }
 
 .navbar .menu-items a {
-  /* margin-bottom: 1.2rem; */
-  font-size: 1.5rem;
-  font-weight: 500;
+	font-size: 1.5rem;
+		font-weight: 500;
 }
 
-.nav-container input[type="checkbox"]:checked ~ .menu-items {
+.nav-container input[type="checkbox"]:checked~.menu-items {
 	transform: translateX(0);
 }
 
-/* .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line {
-  background: var(--dark-text);
-} */
-
-.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
 	transform: rotate(45deg);
 }
 
-.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
 	transform: scaleY(0);
 }
 
-.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
 	transform: rotate(-45deg);
 }
-
-/* @media screen and (max-width: 992px) {
-  .nav-container .hamburger-lines{
-    top: 34px;
-  }
-  .nav-container .checkbox{
-    top: 31px;
-  }
-} */
 
 /* HERO */
 
@@ -315,16 +310,16 @@ body {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	position: relative;
+	padding-top: 130px;
 }
 
 .mainTextBlock {
 	border-radius: 8px;
 	background: rgba(30, 30, 30, 0.3);
 	max-width: 1044px;
-	margin-top: 300px;
 	color: var(--white-text);
 }
 
@@ -364,7 +359,7 @@ body {
 }
 
 .lowerTextBlock .location {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 .scrollDownLink {
@@ -379,21 +374,14 @@ body {
 	height: 50px;
 }
 
-.lowerTextBlock .heroSignup{
-  margin-top: 20px;
-  background-image: linear-gradient(90deg, #0ba34fb0 0%, #5db673b9 100%);
-}
-
-@media screen and (max-width: 1920px) {
-	.mainTextBlock {
-		margin-top: 180px;
-	}
+.lowerTextBlock .heroSignup {
+	background-image: linear-gradient(90deg, #0ba34fb0 0%, #5db673b9 100%);
+	margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1200px) {
 	.mainTextBlock {
 		max-width: 748px;
-		margin-top: 200px;
 	}
 
 	.mainTextBlock h1 {
@@ -411,20 +399,17 @@ body {
 	.lowerTextBlock span {
 		font-size: 1.25em;
 	}
-  .lowerTextBlock .heroSignup{
-    height: 50px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.lowerTextBlock .heroSignup {
+	height: 50px;
+		display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 }
 
 @media screen and (max-width: 748px) {
 	.heroContainer .mainTextBlock {
-		/* max-width: 436px; */
-		width: 95%;
-		margin-top: 240px;
+		margin: 0 10px;
 	}
 
 	.mainTextBlock h1 {
@@ -438,10 +423,7 @@ body {
 }
 
 @media screen and (max-width: 554px) {
-	.heroContainer .mainTextBlock {
-		width: 99%;
-    margin-top: 230px;
-	}
+
 
 	.mainTextBlock h1 {
 		font-size: 1.2em;
@@ -454,9 +436,6 @@ body {
 }
 
 @media screen and (max-width: 442px) {
-	.heroContainer .mainTextBlock {
-		margin-top: 230px;
-	}
 
 	.mainTextBlock h1 {
 		font-size: 0.9em;
@@ -469,10 +448,10 @@ body {
 	.lowerTextBlock span {
 		font-size: 0.9em;
 	}
-  .lowerTextBlock .heroSignup{
-    font-size: 0.9em;
-    height: 44px;
-  }
+.lowerTextBlock .heroSignup {
+	font-size: 0.9em;
+	height: 44px;
+}
 }
 
 /* INFO */
@@ -550,6 +529,9 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+	.heroContainer {
+			justify-content: space-between;
+		}
 	.paragraph {
 		flex-direction: column-reverse;
 		align-items: center;
@@ -568,49 +550,105 @@ body {
 /* AREAS */
 
 #areas {
-  scroll-margin-top: 140px;
-  max-width: 1260px;
-  margin: 0 auto 64px;
-  display: grid;
+	scroll-margin-top: 140px;
+		max-width: 1260px;
+		margin: 0 auto 64px;
+		display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+		grid-template-rows: auto;
+		gap: 32px;
+		justify-content: space-between;
 }
 
-.area{
-  height: 170px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 24px;
-  border-radius: 6px;
+.area {
+	height: 170px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 24px;
+	border-radius: 6px;
+	min-width: 260px
 }
 
-.area img{
-  width: 60px;
-  height: 60px;
-  align-self: end;
+.area img {
+	width: 60px;
+	height: 60px;
+	align-self: end;
 }
 
-.areaText{
-  font-weight: 400;
-  font-size: 1.25em;
+.areaText {
+	font-weight: 400;
+	font-size: 1.25em;
 }
 
-.area:nth-child(1){
-  background: linear-gradient(90deg, #FF8008 0%, #EE9803 100%);
+.area:nth-child(1) {
+	grid-column: 1 / 4;
+	background: linear-gradient(90deg, #FF8008 0%, #EE9803 100%);
 }
-.area:nth-child(2){
-  background: linear-gradient(90deg, #6BAA75 0%, #96E6A1 100%);
+.area:nth-child(2) {
+	background: linear-gradient(90deg, #6BAA75 0%, #96E6A1 100%);
 }
-.area:nth-child(3){
-  background: linear-gradient(90deg, #A1C4FD 0%, #A1E2F8 100%);
-}
-.area:nth-child(4){
-  background: linear-gradient(136deg, #209CFF 0%, #68E0CF 100%);
-}
-.area:nth-child(5){
-  background: linear-gradient(136deg, #F83600 0%, #F9D423 100%);
+.area:nth-child(3) {
+	grid-column: 1 / 2;
+	background: linear-gradient(136deg, #209CFF 0%, #68E0CF 100%);
 }
 
+.area:nth-child(4) {
+	background: linear-gradient(136deg, #F83600 0%, #F9D423 100%);
+}
+
+.area:nth-child(5) {
+	grid-column: 3 / 5;
+	background: linear-gradient(90deg, #A1C4FD 0%, #A1E2F8 100%);
+}
+@media screen and (max-width: 1320px) {
+
+	.area:nth-child(1) {
+		grid-column: 1 / 3;
+		background: linear-gradient(90deg, #FF8008 0%, #EE9803 100%);
+	}
+
+	.area:nth-child(2) {
+		grid-column: 3 / 5;
+	}
+
+	.area:nth-child(3) {
+		grid-column: 1 / 3;
+		background: linear-gradient(136deg, #209CFF 0%, #68E0CF 100%);
+	}
+.area:nth-child(4) {
+	grid-column: 3 / 5;
+	background: linear-gradient(136deg, #F83600 0%, #F9D423 100%);
+}
+
+																																																																																																																																																																																																																																																																.area:nth-child(5) {
+																																																																																																																																																																																																																																																																	grid-column: 1 / 5;
+																																																																																																																																																																																																																																																																	background: linear-gradient(90deg, #A1C4FD 0%, #A1E2F8 100%);
+																																																																																																																																																																																																																																																																}
+																																																																																																																																																																																																																																																																}
+																																																																																																																																
+																																																																																																																																																																																																																																																																@media screen and (max-width: 992px) {
+																																																																																																																																																																																																																																																																	.areaText {
+																																																																																																																																																																																																																																																																		font-size: 1.1em;
+																																																																																																																																																																																																																																																																	}
+																																																																																																																																
+																																																																																																																																																																																																																																																																	.area:nth-child(1) {
+																																																																																																																																																																																																																																																																		grid-column: 1 / 5;
+																																																																																																																																																																																																																																																																	}
+																																																																																																																																
+																																																																																																																																																																																																																																																																	.area:nth-child(2) {
+																																																																																																																																																																																																																																																																		grid-column: 1 / 5;
+																																																																																																																																																																																																																																																																	}
+																																																																																																																																
+																																																																																																																																																																																																																																																																	.area:nth-child(3) {
+																																																																																																																																																																																																																																																																		grid-column: 1 / 5;
+																																																																																																																																																																																																																																																																	}
+																																																																																																																																
+																																																																																																																																																																																																																																																																	.area:nth-child(4) {
+																																																																																																																																																																																																																																																																		grid-column: 1 / 5;
+																																																																																																																																																																																																																																																																	}
+																																																																																																																																																																																																																																																																}
 /* SCHEDULE */
 
 #schedule {
@@ -659,11 +697,9 @@ body {
 	height: 170px;
 	border-radius: 6px;
 	/* background-color: rgba(107, 170, 117, 0.95); */
-	background: linear-gradient(
-		135deg,
-		rgba(104, 192, 119, 0.95) 0%,
-		rgba(107, 170, 117, 0.95) 100%
-	);
+	background: linear-gradient(135deg,
+				rgba(104, 192, 119, 0.95) 0%,
+			rgba(107, 170, 117, 0.95) 100%);
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 24px;
@@ -834,11 +870,9 @@ body {
 .speakerCard .speakerInfo {
 	padding: 14px 12px;
 	/* background: var(--main-bg); */
-	background: linear-gradient(
-		135deg,
-		rgba(104, 192, 119, 0.95) 0%,
-		rgba(107, 170, 117, 0.95) 100%
-	);
+	background: linear-gradient(135deg,
+				rgba(104, 192, 119, 0.95) 0%,
+			rgba(107, 170, 117, 0.95) 100%);
 	border-radius: 8px 8px 4px 4px;
 }
 
@@ -878,11 +912,9 @@ body {
 
 #prices .pricesHeader {
 	/* background: rgba(var(--main-bg-rgb), 0.95); */
-	background: linear-gradient(
-		135deg,
-		rgba(104, 192, 119, 0.95) 0%,
-		rgba(107, 170, 117, 0.95) 100%
-	);
+	background: linear-gradient(135deg,
+				rgba(104, 192, 119, 0.95) 0%,
+			rgba(107, 170, 117, 0.95) 100%);
 	padding: 2.69rem 4rem;
 	border-radius: 12px 12px 0 0;
 }
@@ -915,11 +947,9 @@ body {
 	cursor: pointer;
 	border-radius: 0.125rem;
 	/* background: var(--main-bg); */
-	background: linear-gradient(
-		135deg,
-		rgba(104, 192, 119, 0.95) 0%,
-		rgba(107, 170, 117, 0.95) 100%
-	);
+	background: linear-gradient(135deg,
+				rgba(104, 192, 119, 0.95) 0%,
+			rgba(107, 170, 117, 0.95) 100%);
 	text-align: center;
 	padding: 0.875rem 1.375rem;
 	color: var(--white-text);
@@ -966,7 +996,7 @@ body {
 
 .partnersWrapper {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
 	gap: 45px;
 	max-width: 1260px;
 	margin: 0 auto;
@@ -980,7 +1010,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  box-shadow: 3px 3px 9px -2px rgba(0, 0, 0, 0.25);
+	box-shadow: 3px 3px 9px -2px rgba(0, 0, 0, 0.25);
 }
 
 .partnerCardImage {
@@ -1142,6 +1172,7 @@ body {
 	#footer {
 		flex-direction: column-reverse;
 	}
+
 	.partnersContainer {
 		max-width: none;
 		display: flex;
@@ -1149,12 +1180,15 @@ body {
 		align-items: center;
 		padding: 0 20px 20px;
 	}
+
 	.partnersContainer img {
 		margin-right: 30px;
 	}
+
 	.mesuLogo {
 		margin-right: 0 !important;
 	}
+
 	.footerInfoContainer {
 		width: 100%;
 	}
@@ -1164,18 +1198,22 @@ body {
 	.footerInfoContainer {
 		flex-direction: column-reverse;
 	}
+
 	.contacts {
 		align-items: center;
 		margin-top: 30px;
 	}
+
 	.contactsTitle {
 		font-size: 1.5em;
 		margin-bottom: 26px;
 	}
+
 	.contactsLink,
 	.contactsSecondBlock {
 		font-size: 1.125em;
 	}
+
 	.contactsBlocks .contactsSecondBlock {
 		margin-bottom: 10px;
 		margin-top: 30px;
@@ -1187,9 +1225,11 @@ body {
 		flex-direction: column;
 		padding-bottom: 40px;
 	}
+
 	.contactsBlocks {
 		flex-direction: column;
 	}
+
 	.contactsSecondBlock {
 		margin-left: 0;
 		margin-top: 34px;
@@ -1335,8 +1375,8 @@ body {
 	overflow-y: auto;
 }
 
-#modalHryvnia .modalBody{
-  max-height: calc(100vh - 140px - 94px);
+#modalHryvnia .modalBody {
+	max-height: calc(100vh - 140px - 94px);
 	overflow-y: auto;
 }
 
@@ -1349,6 +1389,7 @@ body {
 	.modalContainer {
 		width: 90%;
 	}
+
 	.modalHeaderText span {
 		font-size: 1.25em;
 	}
@@ -1358,18 +1399,22 @@ body {
 	.firstBank {
 		grid-row-start: 1;
 	}
+
 	.secondBank {
 		grid-row-start: 3;
 	}
+
 	.banks {
 		grid-template-columns: 1fr;
 	}
+
 	.euroContainer {
 		margin-bottom: 30px;
 	}
-  #modalHryvnia .modalBody{
-    margin-bottom: 30px;
-  }
+#modalHryvnia .modalBody {
+	margin-bottom: 30px;
+}
+
 	.modalBody {
 		grid-template-columns: 1fr;
 	}
