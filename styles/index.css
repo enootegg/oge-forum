@@ -575,8 +575,11 @@ body {
 
 /* AREAS */
 
-#areas {
+#areasLink{
 	scroll-margin-top: 140px;
+}
+
+#areas {
 	max-width: 1260px;
 	margin: 0 auto 64px;
 	display: grid;
