@@ -647,12 +647,25 @@ body {
 	background: rgba(138, 159, 171, 0.15);
 }
 
+.offersNote{
+	max-width: 1260px;
+	margin: 0 auto;
+	display: flex;
+	font-size: 1em;
+	font-weight: 300;
+	color: #4D4D4D;
+	margin-top: 30px;
+}
+
 @media screen and (max-width: 1200px) {
 	.offersTable th{
 		font-size: 1.25em;
 	}
 	
 	.offersTable td{
+		font-size: 0.9em;
+	}
+	.offersNote{
 		font-size: 0.9em;
 	}
 }
@@ -667,6 +680,10 @@ body {
 	}
 	.offersTable th{
 		min-width: 170px;
+	}
+	.offersNote{
+		margin-top: 20px;
+		padding: 0 16px;
 	}
 }
 
