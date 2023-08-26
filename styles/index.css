@@ -573,6 +573,103 @@ body {
 	}
 }
 
+/* OFFERS */
+
+#offers{
+	
+}
+
+.tableWrapper{
+	max-width: 1260px;
+	margin: 0 auto;
+}
+
+.offersTable th:first-child{
+	width: 46%;
+	padding-right: 40px;
+	text-align: left;
+}
+
+.offersTable th:nth-child(2){
+	color: #4EA85C;
+}
+
+.offersTable th:nth-child(3){
+	color: #2B9DD1;
+}
+
+.offersTable th:nth-child(4){
+	color: #EE9803;
+}
+
+.offersTable td:nth-child(2){
+	color: #4EA85C;
+}
+
+.offersTable td:nth-child(3){
+	color: #2B9DD1;
+}
+
+.offersTable td:nth-child(4){
+	color: #EE9803;
+}
+
+.offersTable td:first-child{
+	width: 46%;
+	padding-right: 40px;
+	text-align: left;
+}
+
+.offersTable th{
+	width: 18%;
+	font-size: 1.5em;
+	font-weight: 400;
+	border-bottom: 1px solid #D0D0D0;
+}
+
+.offersTable th{
+	text-align: center;
+}
+
+.offersTable td{
+	text-align: center;
+	font-size: 1em;
+	font-weight: 300;
+	border: none;
+}
+
+.offersTable td, .offersTable th{
+	padding: 15px 0;
+	border: 0px solid #ffffff;
+}
+
+.offersTable tr:nth-child(even){
+	background: rgba(138, 159, 171, 0.15);
+}
+
+@media screen and (max-width: 1200px) {
+	.offersTable th{
+		font-size: 1.25em;
+	}
+	
+	.offersTable td{
+		font-size: 0.9em;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.tableWrapper{
+		overflow-x: auto;
+		padding: 16px;
+	}
+	.offersTable th:first-child{
+		min-width: 430px;
+	}
+	.offersTable th{
+		min-width: 170px;
+	}
+}
+
 /* AREAS */
 
 #areasLink{
