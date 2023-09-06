@@ -60,7 +60,7 @@ body {
 }
 
 .menuList li {
-	margin-right: 35px;
+	margin-right: 28px;
 }
 
 .menuList li:last-child {
@@ -71,7 +71,7 @@ body {
 	text-decoration: none;
 	color: var(--white-text);
 	font-weight: 300;
-	font-size: 1em;
+	font-size: 0.9em;
 }
 
 .signupBtn {
@@ -110,6 +110,15 @@ body {
 	margin: 0 auto 30px;
 }
 
+@media screen and (max-width: 1320px) {
+	.headerContainer {
+		padding: 20px 50px;
+	}
+	.menuList li {
+		margin-right: 22px;
+	}
+}
+
 @media screen and (max-width: 1200px) {
 	.headerContainer {
 		padding: 20px 40px;
@@ -121,6 +130,16 @@ body {
 
 	.menuList li {
 		margin-right: 18px;
+	}
+}
+
+@media screen and (max-width: 1090px) {
+	.headerContainer {
+		padding: 20px 20px;
+	}
+
+	.menuList li {
+		margin-right: 14px;
 	}
 }
 
@@ -576,7 +595,7 @@ body {
 /* OFFERS */
 
 #offers{
-	
+	scroll-margin-top: 140px;
 }
 
 .tableWrapper{
