@@ -1177,6 +1177,10 @@ body {
 	height: 72px;
 }
 
+.partnerCardImage.large {
+	height: 100px;
+}
+
 .partnerCard:last-child .partnerCardImage {
 	height: 90px;
 }
