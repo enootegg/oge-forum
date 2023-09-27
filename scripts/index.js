@@ -34,14 +34,21 @@ document.querySelectorAll(".menu-ul a").forEach((el) => {
 
 //Open order popup
 
-document.getElementById("orderHryvnia").addEventListener("click", () => {
-  document.getElementById("modalHryvnia").style.display = "flex";
+const showModal = (modalId) => {
+  document.getElementById(modalId).style.display = "flex";
   document.querySelector("body").style.overflow = "hidden";
+};
+
+document.getElementById("orderHryvnia").addEventListener("click", () => {
+  showModal("modalHryvnia");
 });
 
 document.getElementById("orderEuro").addEventListener("click", () => {
-  document.getElementById("modalEuro").style.display = "flex";
-  document.querySelector("body").style.overflow = "hidden";
+  showModal("modalEuro");
+});
+
+document.getElementById("sectionalMeetings").addEventListener("click", () => {
+  showModal("modalSectional");
 });
 
 //Close order popup
@@ -55,13 +62,10 @@ document.querySelectorAll(".modal").forEach((el) => {
 });
 
 // when we click on .modalContainer, popup doesn`t close
-document
-  .querySelector(".modalContainer")
-  .addEventListener("click", (e) => e.stopPropagation());
 
 document
-  .querySelector(".euroContainer")
-  .addEventListener("click", (e) => e.stopPropagation());
+  .querySelectorAll(".modalContainer")
+  .forEach((el) => el.addEventListener("click", (e) => e.stopPropagation()));
 
 // Close modal function
 

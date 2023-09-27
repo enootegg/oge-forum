@@ -100,6 +100,22 @@ body {
 	font-weight: 300;
 }
 
+.signupBtn.smallText.smaller {
+	padding: 14px 18px;
+	height: 48px;
+	min-width: 196px;
+	/* background: linear-gradient(136deg, #f8360073 0%, #f9d52396 100%); */
+	background: linear-gradient(136deg, #209bff86 0%, #68e0d086 100%);
+}
+
+.signupBtn.smallText.smaller:last-child {
+	margin-left: 14px !important;
+}
+
+.lowerTextBlockBtns{
+	display: flex;
+}
+
 .signupBtn:hover {
 	background-position: 60% 40%;
 	transition: all 0.4s ease-in-out;
@@ -191,6 +207,16 @@ body {
 		margin: 0 auto 30px;
 	}
 
+}
+
+@media screen and (max-width: 500px) {
+	/* .lowerTextBlockBtns{
+		flex-direction: column;
+	} */
+	.signupBtn.smallText.smaller{
+		min-width: 0;
+		text-align: center;
+	}
 }
 
 /* BURGER MENU */
@@ -929,6 +955,25 @@ body {
 	margin-bottom: 0;
 }
 
+.scheduleBlock.blue{
+	background: #A1E2F8;
+	transition: all 0.3s ease;
+}
+
+.scheduleBlock.blue:hover{
+	background: #91daf3;
+	transition: all 0.3s ease;
+}
+
+#sectionalMeetings{
+	border: none;
+	background: inherit;
+	font-weight: 400;
+	font-size: 1em;
+	cursor: pointer;
+	text-align: start;
+}
+
 .scheduleBlockText {
 	font-weight: 400;
 	font-size: 1em;
@@ -982,7 +1027,7 @@ body {
 		font-size: 0.9em;
 	}
 
-	.scheduleBlockText {
+	.scheduleBlockText, #sectionalMeetings {
 		font-size: 0.9em;
 	}
 
@@ -1426,7 +1471,8 @@ body {
 /* MODALS  */
 
 #modalHryvnia,
-#modalEuro {
+#modalEuro,
+#modalSectional {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -1446,6 +1492,10 @@ body {
 	min-height: 500px;
 	width: 800px;
 	max-height: calc(100% - 110px);
+}
+
+.modalContainer.wider {
+	width: 860px;
 }
 
 .modalHeader {
@@ -1581,5 +1631,54 @@ body {
 
 	.modalBody {
 		grid-template-columns: 1fr;
+	}
+}
+
+/* sectionalMeet */
+
+
+.sectionalModal{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 20px;
+	max-height: calc(100vh - 140px - 94px);
+    overflow-y: auto;
+}
+
+.sectionalTable th:first-child{
+	width: 280px;
+}
+.sectionalTable td:first-child{
+	width: 280px;
+}
+
+.sectionalTable th{
+	text-align: center;
+	padding: 12px;
+	border: 1px solid #d3d3d3;
+}
+.sectionalTable td{
+	text-align: center;
+	padding: 12px;
+	border: 1px solid #d3d3d3;
+}
+
+.sectionalTable {
+	font-size: 0.9em;
+}
+
+@media screen and (max-width: 860px) {
+	.sectionalModal{
+		overflow-x: auto;
+		width: 100vw;
+		justify-content: start;
+		align-items: start;
+	}
+	.sectionalTable th{
+		min-width: 240px;
+	}
+	.sectionalTable td{
+		min-width: 240px;
 	}
 }
